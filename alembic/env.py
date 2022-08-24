@@ -7,7 +7,7 @@ import logging
 
 # we're appending the app directory to our path here so that we can import config easily
 sys.path.append(str(pathlib.Path(__file__).resolve().parents[1]))
-from app.database import DATABASE_URL  # noqa
+from app.config import DATABASE_URL  # noqa
 
 # Alembic Config object, which provides access to values within the .ini file
 config = alembic.context.config
