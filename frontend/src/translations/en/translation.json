@@ -1,0 +1,26 @@
+{
+  "auth": {
+    "backToLogin": "Back to login",
+    "email": "Email",
+    "firstName": "Fist name",
+    "forgotLink": "Forgot your password?",
+    "getStarted": "Get started",
+    "lastName": "Example",
+    "loginButton": "Log in",
+    "loginLink": "You’ve already have an account?",
+    "loginTitle": "Log in to your account",
+    "logOut": "",
+    "password": "Password",
+    "registerLink": "Don't have an account yet?",
+    "repeatPassword": "Re-type password",
+    "resetPasswordTitle": "Reset your password",
+    "sendPasswordReset": "Send email",
+    "withFreeAccount": "with a free account"
+  },
+  "validation": {
+    "invalidEmail": "Invalid email",
+    "minPassword": "Too short. Password must be at least {{min}} characters.",
+    "passwordMatch": "Password doesn't match",
+    "required": "This field is required"
+  }
+}
