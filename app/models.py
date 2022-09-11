@@ -1,12 +1,11 @@
-from sqlalchemy import Boolean, Column, ForeignKey, Integer, String
-from sqlalchemy.orm import relationship
-
+from sqlalchemy import Boolean, Column, Integer, String
 from .database import Base
-from pydantic import BaseModel, constr
 
-class User(BaseModel):
+class User(Base):
+    __tablename__ = "users"
 
-    id: int
-    email: constr(max_length=100)
-    password: constr(max_length=40)
+    id = Column(Integer, primary_key=True, index=True)
+    email = Column(String, unique=True, index=True)
+    hashed_password = Column(String)
+    is_active = Column(Boolean, default=True)
 
